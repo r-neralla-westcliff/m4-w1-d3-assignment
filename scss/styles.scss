@@ -1,0 +1,98 @@
+@import url(https://fonts.googleapis.com/css?family=Bitter:400,400italic,700);
+
+//Colors:
+/*---------
+rgb(255,255,255)
+rgb(0,0,0)
+rgba(0,0,0,0.5)
+rgba(0,0,0,0.24)
+rgb(22, 34, 42)
+rgb(58, 96, 115)
+
+
+//Fonts:
+Bitter
+FontAwesome
+
+----------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bitter";
+}
+
+$max-width: 80em;
+
+$primary: #0c2c40;
+$light: #ffffff;
+$black: rgb(0,0,0);
+$gray: #333;
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #fff;
+}
+
+.header {
+  background: linear-gradient(to right, #1c3c50, #355c70);
+  color: $light;
+  text-align: center;
+  padding: 1.5rem;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 1rem 0;
+  color: $gray;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+
+  .item {
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    border-radius: 4px;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    h3 {
+      font-size: 1rem;
+      margin: 0.5rem 0 0.2rem;
+    }
+
+    p {
+      font-size: 0.85rem;
+      color: #666;
+      margin-bottom: 0.5rem;
+    }
+
+    button {
+      background: none;
+      color: $black;
+      border: 1px solid $black;
+      padding: 0.4rem 0.8rem;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 0.85rem;
+    }
+  }
+}
